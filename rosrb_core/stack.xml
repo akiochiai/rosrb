@@ -1,0 +1,8 @@
+<stack>
+  <description brief="ROS client library for Ruby">rosrb_core</description>
+  <author>Aki Ochiai</author>
+  <license>BSD License (2 clauses)</license>  
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosrb_core</url>
+  <depend stack="ros" />
+</stack>

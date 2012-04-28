@@ -1,0 +1,15 @@
+require 'rubygems'
+GEMSPEC = Gem::Specification.load('rosrb')
+
+desc 'Generate documentation'
+begin
+    require 'yard'
+    YARD::Rake::YardocTask.new do |t|
+        t.files = ['src/**/*.rb']
+        t.options = ['--main', 'README.md', '--no-private']
+    end
+rescue LoadError
+  task :yard do
+      puts "You need YARD. Try '$ gem install yard'"
+  end
+end

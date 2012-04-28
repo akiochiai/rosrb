@@ -1,0 +1,17 @@
+<package>
+  <description brief="rosrb">
+     A ROS client library implementation for Ruby
+  </description>
+  <author>Aki Ochiai</author>
+  <license>BSD(2 clauses)</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/rosrb</url>
+  <depend package="roslang"/>
+  <depend package="std_msgs"/>
+  <depend package="rosgraph_msgs"/>
+  <export>
+      <roslang cmake="${prefix}/cmake/rosrb.cmake"/>
+  </export>
+</package>
+
+
